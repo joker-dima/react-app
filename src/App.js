@@ -24,7 +24,7 @@ let App = () => {
         <a href='#'> <img src={messageIcon} alt='Сообщения' />Сообщения</a>
         <a href='#'><img src={magazineIcon} alt='Лента новостей' /> Лента новостей</a>
         <a href='#'><img src={friendsIcon} alt='Друзья' /> Друзья</a>
-        <a href='#'><img src={customizationIcon} alt='Настройки' /> Настройки</a>
+        <a href='#' className='customization'><img src={customizationIcon} alt='Настройки' /> Настройки</a>
 
 
 
@@ -35,9 +35,11 @@ let App = () => {
         <div className='wallpaper'></div>
         <div className='my-profile'>
           <img src={require('./image/avatar.jpg')} alt='Логотип соц.сети' />
-          <h2>Арнольд Шварценеггер</h2>
-          <p>Дата рождения: <span>30 июля 1947 г. </span></p>
-          <p>Город:<span> Лос-Анджелес</span> </p>
+          <div className='my-profile-content'>
+            <h2>Арнольд Шварценеггер</h2>
+            <p>Дата рождения: <span>30 июля 1947 г. </span></p>
+            <p>Город:<span> Лос-Анджелес</span> </p>
+          </div>
         </div>
         <div className='posts'>
           <textarea name="new-post" cols="40" rows="3"></textarea>
@@ -48,6 +50,7 @@ let App = () => {
 
           <p>Dude, let's go 2 gym?</p>
         </div>
+
       </main>
 
 
