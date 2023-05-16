@@ -1,0 +1,85 @@
+main {
+    grid-area: main;
+
+}
+
+.my_profile {
+
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(122, 122, 122, 0.2);
+    width: 100%;
+    margin-right: auto;
+}
+
+.my_profile img {
+    border-radius: 200px;
+    max-width: 200px;
+}
+
+.my_profile_content {
+    margin-left: 50px;
+}
+
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(122, 122, 122, 0.2);
+    width: 100%;
+    margin: 20px auto 0 0;
+}
+
+.posts textarea {
+    margin-bottom: 20px;
+    width: 90%;
+    border-color: #e5e7eb;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+
+.posts textarea:hover {
+    outline: none;
+}
+
+
+.post_avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(122, 122, 122, 0.2);
+    width: 100%;
+    margin: 20px auto 0 0;
+
+}
+
+.button_submit {
+    background-color: #447bba;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    color: white;
+}
+
+.button_submit:hover {
+    background-color: #5b8bc2;
+    cursor: pointer;
+}

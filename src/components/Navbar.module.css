@@ -1,0 +1,33 @@
+.navbar {
+    grid-area: navbar;
+    margin-left: 5px;
+    width: 200px;
+    margin-left: auto;
+}
+
+.customization {
+    padding-top: 50px !important;
+}
+
+.navbar a {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    line-height: 20px;
+    display: flex;
+    padding: 10px 0 10px 0;
+    max-width: 80%;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #e5e7eb;
+}
+
+.navbar a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

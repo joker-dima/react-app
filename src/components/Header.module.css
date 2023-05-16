@@ -1,0 +1,24 @@
+/* HEADER */
+
+header {
+    grid-area: header;
+    display: flex;
+    padding: 5px 0 5px 25%;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0.2em 0.1em 3px rgba(122, 122, 122, 0.2);
+}
+
+header img {
+    width: 50px;
+    align-items: center;
+
+}
+
+header h1 {
+
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 20px;
+
+}
