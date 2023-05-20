@@ -1,27 +1,4 @@
-main {
-    grid-area: main;
 
-}
-
-.my_profile {
-
-    display: flex;
-    background-color: white;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 3px rgba(122, 122, 122, 0.2);
-    width: 100%;
-    margin-right: auto;
-}
-
-.my_profile img {
-    border-radius: 200px;
-    max-width: 200px;
-}
-
-.my_profile_content {
-    margin-left: 50px;
-}
 
 
 .posts {
@@ -52,12 +29,6 @@ main {
 }
 
 
-.post_avatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
-    margin-right: 10px;
-}
 
 .post {
     display: flex;

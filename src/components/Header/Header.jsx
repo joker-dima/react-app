@@ -5,7 +5,7 @@ let Header = () => {
 
     return (
         <header>
-            <img src={require('../image/logo.png')} alt='Логотип соц.сети' />
+            <img src={require('../../image/logo.png')} alt='Логотип соц.сети' />
             <h1>Eaglebook </h1>
 
         </header>

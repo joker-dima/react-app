@@ -1,10 +1,10 @@
 import React from "react"
 import style from "./Navbar.module.css"
-import profileIcon from '../image/prof.svg'
-import messageIcon from '../image/message.svg'
-import magazineIcon from '../image/magazine.svg'
-import friendsIcon from '../image/friends.svg'
-import customizationIcon from '../image/customization.svg'
+import profileIcon from '../../image/prof.svg'
+import messageIcon from '../../image/message.svg'
+import magazineIcon from '../../image/magazine.svg'
+import friendsIcon from '../../image/friends.svg'
+import customizationIcon from '../../image/customization.svg'
 
 
 let Navbar = () => {
