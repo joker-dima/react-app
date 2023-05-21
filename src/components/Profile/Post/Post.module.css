@@ -6,13 +6,45 @@
 }
 
 .post {
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     background-color: white;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 0 3px rgba(122, 122, 122, 0.2);
-    width: 100%;
+    /* width: 100%; */
     margin: 20px auto 0 0;
 
+}
+
+.post_message_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.message {
+    margin-top: 10px;
+}
+
+.likes_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.likes_wrapper img {
+    width: 20px;
+}
+
+.likes_wrapper {
+    margin-top: 10px;
+    display: flex;
+}
+
+.likes {
+    display: flex;
+    margin-left: 5px;
 }

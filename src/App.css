@@ -10,6 +10,22 @@ body {
     "header header header header"
     ". navbar main .";
   grid-template-rows: 80px 1fr;
-  grid-template-columns: 25% 200px 1fr 25%;
+  grid-template-columns: 20% 200px 3fr 20%;
 
+}
+
+
+@media (max-width: 800px) {
+
+  .App-wrapper {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main";
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    margin: 0 5%;
+  }
 }

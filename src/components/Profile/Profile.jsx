@@ -3,6 +3,7 @@ import style from "./Profile.module.css"
 import Posts from "./Myposts/Posts";
 import Post from "./Post/Post";
 
+
 let Profile = () => {
 
     return (
@@ -17,14 +18,14 @@ let Profile = () => {
                     <p>Город:<span> Лос-Анджелес</span> </p>
                 </div>
             </div>
-         
-<Posts />
+
+            <Posts />
 
 
-<Post />
-<Post />
+            <Post message="Dude, let's go 2 gym?" number_likes="5" />
+            <Post message="I'm hungry!" number_likes="2" />
 
-           
+
 
         </main>
 

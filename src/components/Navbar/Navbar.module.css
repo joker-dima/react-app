@@ -5,19 +5,25 @@
     margin-left: auto;
 }
 
+@media (max-width: 800px) {
+
+    .navbar {
+        display: none;
+    }
+}
+
 .customization {
-    padding-top: 50px !important;
+    margin-top: 50px !important;
 }
 
 .navbar a {
     list-style: none;
     margin: 10px 0 0 0;
-    padding: 0;
     text-decoration: none;
     color: black;
     line-height: 20px;
     display: flex;
-    padding: 10px 0 10px 0;
+    padding: 10px 5px 10px 5px;
     max-width: 80%;
     border-radius: 5px;
 }
