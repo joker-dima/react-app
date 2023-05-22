@@ -1,14 +1,19 @@
 import React from "react"
-import './Header.module.css'
+import style from './Header.module.css'
+
 
 let Header = () => {
 
     return (
         <header>
-            <img src={require('../../image/logo.png')} alt='Логотип соц.сети' />
-            <h1>Eaglebook </h1>
+            <div className={style.logo}>
+                <div className={style.logo_wrapper}>
+                    <img src={require('../../image/logo.png')} alt='Логотип соц.сети' />
+                    <h1>Eaglebook </h1>
+                </div>
+            </div>
 
-        </header>
+        </header >
     )
 }
 

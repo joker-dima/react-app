@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Profile.module.css"
-import Posts from "./Myposts/Posts";
+import Send_post from "./Myposts/Send_post";
 import Post from "./Post/Post";
 
 
@@ -19,13 +19,11 @@ let Profile = () => {
                 </div>
             </div>
 
-            <Posts />
-
+            <Send_post />
 
             <Post message="Dude, let's go 2 gym?" number_likes="5" />
             <Post message="I'm hungry!" number_likes="2" />
-
-
+            <Post message="Light weight, baby!!! Light weight!" number_likes="3" />
 
         </main>
 

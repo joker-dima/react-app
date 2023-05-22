@@ -12,11 +12,8 @@
     }
 }
 
-.customization {
-    margin-top: 50px !important;
-}
 
-.navbar a {
+a {
     list-style: none;
     margin: 10px 0 0 0;
     text-decoration: none;
@@ -28,12 +25,24 @@
     border-radius: 5px;
 }
 
-.navbar a:hover {
+.link a:first-child {
+    margin-top: 0;
+}
+
+.navbar a:last-child {
+    margin-top: 50px !important;
+}
+
+.link a:hover {
     background-color: #e5e7eb;
 }
 
-.navbar a img {
+.link_icon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+}
+
+.active {
+    background-color: #dddddd;
 }
