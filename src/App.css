@@ -9,13 +9,13 @@ body {
   grid-template-areas:
     "header header header header"
     ". navbar main .";
-  grid-template-rows: 75px 1fr;
-  grid-template-columns: 1fr 200px minmax(650px, 1fr) 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 1fr 200px minmax(550px, 1fr) 1fr;
   gap: 10px;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 880px) {
 
   .App-wrapper {
     display: grid;
@@ -24,7 +24,7 @@ body {
       "main"
       "navbar_mobile";
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 1fr 50px;
+    grid-template-rows: 60px 1fr 50px;
   }
 
   main {

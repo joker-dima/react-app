@@ -6,7 +6,7 @@ header {
     align-items: center;
 
     background-color: white;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     box-shadow: 0.2em 0.1em 3px rgba(122, 122, 122, 0.2);
 }
 

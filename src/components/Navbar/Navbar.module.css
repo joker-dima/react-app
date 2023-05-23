@@ -5,7 +5,7 @@
     margin-left: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 880px) {
 
     .navbar {
         display: none;

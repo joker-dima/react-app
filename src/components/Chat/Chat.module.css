@@ -1,0 +1,28 @@
+.chat_wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr;
+background-color: white;
+margin: 0 10px;
+border-radius: 10px;
+}
+
+.dialogs {
+    margin: 10px;
+    min-height: calc(100vh - 100px);
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    margin: 10px;
+    line-height: 30px;
+}
+
+.active {
+background-color: red;
+}
+
+.dialog {
+ 
+}
