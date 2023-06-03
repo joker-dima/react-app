@@ -1,26 +1,46 @@
-import React from "react"
-import style from './Chat.module.css'
-import { NavLink } from "react-router-dom"
+import React from "react";
+import style from "./Chat.module.css";
+import { NavLink } from "react-router-dom";
 
+const ChateItem = (props) => {
+  const path = "/chat/" + props.chateID;
 
-let Chat = () => {
+  return (
+    <NavLink
+      to={path}
+      className={(navData) => (navData.isActive ? style.active : style.dialog)}
+    >
+      <p>{props.name}</p>
+    </NavLink>
+  );
+};
 
-    return (
-
-        <div className={style.chat_wrapper}> 
-            <div className={style.dialogs}>
-                <NavLink className={navData => navData.isActive ? style.active : style.dialog} >Франко Коломбо</NavLink>
-                <NavLink  className={navData => navData.isActive ? style.active : style.dialog} >Сильвестер Сталоне</NavLink>
-                <NavLink  className={navData => navData.isActive ? style.active : style.dialog} >Саша Курицын</NavLink>
-                <NavLink className={navData => navData.isActive ? style.active : style.dialog} >Дом.работница</NavLink>
-            </div>
-<div className={style.messages}>
-<div className={style.message}>Хей Бро, как там?</div>
-<div className={style.message}>Снимем еще одних неудержимых?</div>
-<div className={style.message}>Уот так вот, Сашок!</div>
-</div>
-        </div>
-    )
+const ChatMessage = (props) => {
+  return (
+    <div className={style.message}>{props.message}</div>
+  )
 }
 
-export default Chat
+const Chat = () => {
+  return (
+    <div className={style.chat_wrapper}>
+      <div className={style.dialogs}>
+        <ChateItem name="Франко Коломбо" chateID="1" />
+        <ChateItem name="Сильвестер Сталоне" chateID="2" />
+        <ChateItem name="Саша Курицын" chateID="3" />
+        <ChateItem name="Дом.работница" chateID="4" />
+        
+      </div>
+
+      <div className={style.messages}>
+
+        < ChatMessage message="Хей Бро, как там?" />
+        < ChatMessage message="Снимем еще одних неудержимых?" />
+        < ChatMessage message="Уот так вот, Сашок!" />
+    
+      </div>
+    </div>
+  );
+};
+
+export default Chat;

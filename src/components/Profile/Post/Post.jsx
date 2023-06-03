@@ -3,8 +3,6 @@ import style from "./Post.module.css"
 
 
 
-let num;
-
 
 
 let Post = (props) => {

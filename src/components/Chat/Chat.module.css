@@ -10,8 +10,9 @@ border-radius: 10px;
     margin: 10px;
     min-height: calc(100vh - 100px);
     line-height: 30px;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+ 
 }
 
 .messages {
@@ -20,9 +21,29 @@ border-radius: 10px;
 }
 
 .active {
-background-color: red;
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+}
+
+.active p {
+    margin: 0;
+    padding: 5px;
+    background-color: #dddddd;
+    margin-right: auto;
+    border-radius: 5px;
 }
 
 .dialog {
- 
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+   
 }
+
+
+.dialog p {
+margin: 0;
+padding: 0;
+padding: 5px;
+} 
