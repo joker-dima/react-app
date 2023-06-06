@@ -18,6 +18,13 @@ const MyProfile = (props) => {
     )
 }
 
+const postData = [
+{message:'Dude, let\'s go 2 gym', numberLikes:5},
+{message:'I\'am hungry!', numberLikes:2},
+{message:'Light weight, baby!!! Light weight!', numberLikes:12}
+
+]
+
 const Profile = () => {
 
     return (
@@ -28,9 +35,9 @@ const Profile = () => {
 
             <Send_post />
 
-            <Post message="Dude, let's go 2 gym?" number_likes="5" />
-            <Post message="I'm hungry!" number_likes="2" />
-            <Post message="Light weight, baby!!! Light weight!" number_likes="3" />
+            <Post message={postData[0].message} numberLikes={postData[0].numberLikes} />
+            <Post message={postData[1].message} numberLikes={postData[1].numberLikes} />
+            <Post message={postData[2].message} numberLikes={postData[2].numberLikes} />
 
         </main>
 

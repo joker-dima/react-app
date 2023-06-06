@@ -18,7 +18,7 @@ let Post = (props) => {
 
             <div className={style.message} >{props.message}</div>
             <div className={style.likes_wrapper}>
-                <img src={require('../../../image/like.png')} alt='Лайк' /> {props.number_likes}
+                <img src={require('../../../image/like.png')} alt='Лайк' /> {props.numberLikes}
             </div>
 
 
