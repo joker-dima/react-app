@@ -18,12 +18,14 @@ const MyProfile = (props) => {
     )
 }
 
-const postData = [
+let postDataArr = [
 {message:'Dude, let\'s go 2 gym', numberLikes:5},
 {message:'I\'am hungry!', numberLikes:2},
 {message:'Light weight, baby!!! Light weight!', numberLikes:12}
 
 ]
+
+let postData = postDataArr.map( p => <Post message={p.message} numberLikes={p.numberLikes} />)
 
 const Profile = () => {
 
@@ -35,13 +37,9 @@ const Profile = () => {
 
             <Send_post />
 
-            <Post message={postData[0].message} numberLikes={postData[0].numberLikes} />
-            <Post message={postData[1].message} numberLikes={postData[1].numberLikes} />
-            <Post message={postData[2].message} numberLikes={postData[2].numberLikes} />
+         {postData}
 
         </main>
-
-
     )
 
 }
