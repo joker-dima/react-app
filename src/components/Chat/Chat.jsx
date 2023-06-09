@@ -1,19 +1,7 @@
 import React from "react";
 import style from "./Chat.module.css";
-import { NavLink } from "react-router-dom";
+import ChateItem from "./ChateItem/ChatItem";
 
-const ChateItem = (props) => {
-  const path = "/chat/" + props.chateID;
-
-  return (
-    <NavLink
-      to={path}
-      className={(navData) => (navData.isActive ? style.active : style.dialog)}
-    >
-      <p>{props.name}</p>
-    </NavLink>
-  );
-};
 
 let ChatMessage = (props) => {
   return (
@@ -38,7 +26,6 @@ let ChatMessagesArr = [
 let ChatMessages = ChatMessagesArr.map( m =>  < ChatMessage message={m.message}/>)
 let ChatNames = chatNamesArr.map( n => <ChateItem name={n.name} chateID={n.id} /> )
 
-
 const Chat = () => {
   return (
     <div className={style.chat_wrapper}>
@@ -48,10 +35,8 @@ const Chat = () => {
       </div>
 
       <div className={style.messages}>
-
        { ChatMessages }
-    
-      </div>
+          </div>
     </div>
   );
 };

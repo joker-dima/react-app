@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Send_post.module.css"
 
-let Send_post = () => {
+let SendPost = () => {
 
     return (
         <div className={style.posts}>
@@ -12,4 +12,4 @@ let Send_post = () => {
 
 }
 
-export default Send_post;
+export default SendPost;
