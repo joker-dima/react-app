@@ -27,13 +27,13 @@ body {
     grid-template-rows: 60px 1fr 50px;
   }
 
-  main {
+  /* main {
     margin: 0 5%;
-  }
+  } */
 }
 
 .app-content-wrapper {
   grid-area: main;
   max-width: 900px;
-
+  margin: 0 10px;
 }
