@@ -24,6 +24,7 @@ let App = () => {
 
         <div className='app-content-wrapper'>
           <Routes>
+            <Route path='/' Component={Profile} />
             <Route path='/profile' Component={Profile} />
             <Route path='/chat/*' Component={Chat} />
             <Route path='/news' Component={News} />
