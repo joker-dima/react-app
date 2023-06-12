@@ -7,7 +7,7 @@ border-radius: 20px;
 }
 
 .dialogs {
-    margin: 10px;
+
     min-height: calc(100vh - 100px);
     line-height: 30px;
   display: flex;
