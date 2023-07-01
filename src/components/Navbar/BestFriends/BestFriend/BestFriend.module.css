@@ -1,0 +1,21 @@
+.best_friend {
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    margin: 5px;
+    border-radius: 25px;
+   
+}
+
+.best_friend_wrapper {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.best_friend_wrapper p {
+    font-size: 12px;
+    margin-top: 0px;
+}
