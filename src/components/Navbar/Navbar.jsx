@@ -20,7 +20,7 @@ let Navbar = (props) => {
             <NavLink to='/friends' className={navData => navData.isActive ? style.active : style.link} ><img className={style.link_icon} src={friendsIcon} alt='Друзья' /> Друзья</NavLink >
             <NavLink to='/settings' className={navData => navData.isActive ? style.active : style.link} ><img className={style.link_icon} src={customizationIcon} alt='Настройки' /> Настройки</NavLink >
             </div>
-            < BestFriends names={state.chat.chatNamesArr} />
+            < BestFriends friends={state.chat.chatNamesArr} />
                </div >
              
              

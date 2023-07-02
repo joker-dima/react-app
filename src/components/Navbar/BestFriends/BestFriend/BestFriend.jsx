@@ -5,13 +5,13 @@ import style from "./BestFriend.module.css"
 
 
 let BestFriend = (props) => {
-console.log(props.names)
+console.log(props.friends[props.id].avatar)
     return (
                 <div className={style.best_friend_wrapper}> 
-            <div className={style.best_friend}>
-         
-            </div> 
-            <p>{props.names[props.id].name}</p>
+               <img src="../image/avatar.jpg" alt="" />
+
+            <img className={style.avatar} src={props.friends[props.id].avatar} alt="" />
+                    <p>{props.friends[props.id].name}</p>
                  </div> 
     )
 }
