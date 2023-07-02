@@ -1,0 +1,14 @@
+.chat_wrapper {
+    background-color: white;
+    border-radius: 20px;
+    min-height: calc(100vh - 100px);
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.messages {
+    margin: 10px;
+    line-height: 30px;
+}

@@ -1,21 +1,19 @@
 .chat_wrapper {
-/* display: grid;
-grid-template-columns: 1fr 1fr; */
-background-color: white;
-
-border-radius: 20px;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .dialogs {
 
-    min-height: calc(100vh - 100px);
-    line-height: 30px;
+  min-height: calc(100vh - 100px);
+  line-height: 30px;
   display: flex;
   flex-direction: column;
- 
+  padding-left: 10px;
+
 }
 
 .messages {
-    margin: 10px;
-    line-height: 30px;
+  margin: 10px;
+  line-height: 30px;
 }

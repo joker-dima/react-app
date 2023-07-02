@@ -12,9 +12,8 @@ header {
 
 
 .logo {
-
+    height: 100%;
     display: grid;
-
     grid-template-areas:
         ". logo . .";
     grid-template-columns: 1fr 100px minmax(650px, 1fr) 1fr;

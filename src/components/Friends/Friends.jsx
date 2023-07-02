@@ -1,14 +1,16 @@
-import React from "react"
-import style from './Friends.module.css'
+import React from "react";
+import style from "./Friends.module.css";
+import Friend from "./Friend/Friend";
 
 
-let Friends = () => {
+const Friends = (props) => {
 
     return (
-        <div>
-            FRIENDS
+        <div className={style.chat_wrapper}>
+            {props.FriendsArr.map(n => <Friend messageCount={n.messageCount} avatar={n.avatar} name={n.name} chateID={n.id} />)}
         </div>
-    )
-}
+    );
 
-export default Friends
+};
+
+export default Friends;

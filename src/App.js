@@ -21,16 +21,16 @@ let App = () => {
         <Navbar NavBarArr={state.Navbar} />
         <div className='app-content-wrapper'>
           <Routes>
-            <Route path='/' element={<Profile postDataArr = {state.profile.postDataArr} /> }/>
-            <Route path='/profile' element={<Profile postDataArr = {state.profile.postDataArr} /> }/>
-            <Route path='/chat/*' element={ <Chat ChatMessagesArr={state.chat.ChatMessagesArr} chatNamesArr={state.chat.chatNamesArr} />} />
+            <Route path='/' element={<Profile postDataArr={state.profile.postDataArr} />} />
+            <Route path='/profile' element={<Profile postDataArr={state.profile.postDataArr} />} />
+            <Route path='/chat/*' element={<Chat ChatMessagesArr={state.chat.ChatMessagesArr} chatNamesArr={state.chat.chatNamesArr} />} />
             <Route path='/news' Component={News} />
-            <Route path='/friends' Component={Friends} />
-            <Route path='/settings' Component={Settings} />
+            <Route path='/friends' element={<Friends FriendsArr={state.chat.chatNamesArr} />} />
+            <Route path='/settings' />
           </Routes>
 
 
-                 </div>
+        </div>
 
 
         <Navbar_mobile />
